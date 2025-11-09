@@ -80,40 +80,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Expected Outcomes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📚</span>
-              </div>
-              <h3 className="font-semibold text-gray-800 mb-2">Knowledge Sharing</h3>
-              <p className="text-gray-600 text-sm">Exchange of latest research findings</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤝</span>
-              </div>
-              <h3 className="font-semibold text-gray-800 mb-2">Partnerships</h3>
-              <p className="text-gray-600 text-sm">New research collaborations</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">💡</span>
-              </div>
-              <h3 className="font-semibold text-gray-800 mb-2">Innovation</h3>
-              <p className="text-gray-600 text-sm">Novel research directions</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🌍</span>
-              </div>
-              <h3 className="font-semibold text-gray-800 mb-2">Global Impact</h3>
-              <p className="text-gray-600 text-sm">Solutions for global challenges</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

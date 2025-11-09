@@ -5,9 +5,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Speakers from './pages/Speakers';
 import Schedule from './pages/Schedule';
-import Registartion from './pages/Registartion';
 import Committees from './pages/Committees';
 import Venue from './pages/Venue';
+import ConferencePage from "./pages/ConferencePage";
 
 function App() {
   return (
@@ -19,10 +19,10 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/speakers" element={<Speakers />} />
             <Route path="/schedule" element={<Schedule />} />
-            <Route path="/registration" element={<Registartion />} />
+            <Route path="/registration" element={<ConferencePage />} />
             <Route path="/committees" element={<Committees /> } />
             <Route path="/venue" element={<Venue />} />
-            <Route path="/contact" element={<div>Contact Page - To be implemented</div>} />
+            <Route path="/contact" element={<div>Contact Page</div>} />
           </Routes>
         </main>
         <Footer />
