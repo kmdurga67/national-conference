@@ -1,42 +1,20 @@
 export const CONFERENCE_THEMES = {
-  mainTheme: {
-    title: "One Health Framework: Global Threat and Impact",
-    description: "A comprehensive approach addressing the interconnectedness of human health, animal health, and environmental factors in combating global health threats."
-  },
-  pillars: [
+  mainTheme: [
     {
-      id: 1,
-      title: "Human Health",
-      description: "Addressing antimicrobial resistance and infectious diseases in human populations",
-      icon: "👨‍⚕️"
+      category: "One Health Framework: Global Threat and Impact",
+      items: [
+        "Human Health",
+        "Animal Health",
+        "Environment",
+        "Interconnected Transmission Pathways"
+      ]
     },
-    {
-      id: 2,
-      title: "Animal Health",
-      description: "Monitoring and managing health threats in animal populations and veterinary medicine",
-      icon: "🐄"
-    },
-    {
-      id: 3,
-      title: "Environment",
-      description: "Understanding environmental factors contributing to disease transmission and AMR",
-      icon: "🌍"
-    },
-    {
-      id: 4,
-      title: "Interconnected Transmission Pathways",
-      description: "Tracking and analyzing disease transmission across human-animal-environment interfaces",
-      icon: "🔄"
-    }
-  ],
-  focusAreas: [
     {
       category: "AMR Surveillance",
       items: [
         "Integrated human, animal, environmental monitoring",
         "Genomic and AI-driven surveillance systems"
-      ],
-      icon: "📊"
+      ]
     },
     {
       category: "Diagnostics",
@@ -44,8 +22,7 @@ export const CONFERENCE_THEMES = {
         "Rapid, affordable, field-level solutions",
         "Lateral flow, CRISPR, biosensors",
         "AI-enabled decision support systems"
-      ],
-      icon: "🔬"
+      ]
     },
     {
       category: "Therapeutics",
@@ -53,8 +30,7 @@ export const CONFERENCE_THEMES = {
         "Antimicrobial stewardship programs",
         "Alternatives: synbiotics, phages, AMPs",
         "Precision medicine"
-      ],
-      icon: "💊"
+      ]
     }
   ]
 };

@@ -36,12 +36,12 @@ const Home = () => {
               Ready to Join the Innovation?
             </h2>
             <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed text-blue-100">
-              Connect with <span className="font-semibold text-white">visionary thinkers</span>, explore <span className="font-semibold text-white">cutting-edge research</span>, and be part of the future at ICAS 2024.
+              Connect with <span className="font-semibold text-white">visionary thinkers</span>, explore <span className="font-semibold text-white">cutting-edge research</span>, and be part of the future at National Conference 2025.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-2xl mx-auto">
               {[
-                { number: '50+', label: 'Expert Speakers' },
-                { number: '1000+', label: 'Participants' },
+                { number: '20+', label: 'Expert Speakers' },
+                { number: '100+', label: 'Participants' },
                 { number: '2', label: 'Days of Innovation' }
               ].map((stat, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">

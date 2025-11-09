@@ -2,7 +2,7 @@ import { ABOUT_CONTENT, CONFERENCE_THEMES } from '../constants/conferenceThemes'
 
 const About = () => {
   const { hero, overview } = ABOUT_CONTENT;
-  const { mainTheme, pillars } = CONFERENCE_THEMES;
+  const { mainTheme } = CONFERENCE_THEMES;
 
   const colorClasses = {
     blue: 'bg-blue-50 border-blue-200 text-blue-800',
@@ -72,47 +72,30 @@ const About = () => {
         </section>
         <section className="bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl p-6 sm:p-8 text-white mb-12">
           <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Conference Themes</h2>
-            <div className="max-w-3xl mx-auto">
-              <h3 className="text-xl font-semibold mb-3">{mainTheme.title}</h3>
-              <p className="text-white/90 text-lg">{mainTheme.description}</p>
-            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8">Conference Themes</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {pillars.map((pillar) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+            {mainTheme.map((theme, index) => (
               <div
-                key={pillar.id}
+                key={index}
                 className="bg-white/20 rounded-lg p-6 backdrop-blur-sm border border-white/30 transition-all duration-300 hover:bg-white/30 hover:scale-105"
               >
-                {/* <div className="text-3xl mb-3 text-center">{pillar.icon}</div> */}
-                <h3 className="text-xl font-semibold mb-3 text-center">{pillar.title}</h3>
-                <p className="text-white/90 text-center text-sm sm:text-base">{pillar.description}</p>
+                <h3 className="text-xl font-semibold mb-4 text-center">
+                  {theme.category}
+                </h3>
+                <ul className="text-white/90 space-y-2">
+                  {theme.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="text-sm sm:text-base flex items-start">
+                      <span className="text-white mr-2 mt-1">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </section>
-        {CONFERENCE_THEMES.focusAreas && (
-          <section className="bg-white rounded-2xl shadow-lg p-6 sm:p-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
-              Key Focus Areas
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              {CONFERENCE_THEMES.focusAreas.map((area, index) => (
-                <div key={index} className="text-center">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-4">{area.category}</h3>
-                  <ul className="text-gray-600 space-y-2">
-                    {area.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-sm sm:text-base">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
       </div>
     </div>
   );
