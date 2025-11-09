@@ -34,8 +34,7 @@ export const CONFERENCE_THEMES = {
       category: "AMR Surveillance",
       items: [
         "Integrated human, animal, environmental monitoring",
-        "Genomic and AI-driven surveillance systems",
-        "Real-time data collection and analysis"
+        "Genomic and AI-driven surveillance systems"
       ],
       icon: "📊"
     },
@@ -43,8 +42,8 @@ export const CONFERENCE_THEMES = {
       category: "Diagnostics",
       items: [
         "Rapid, affordable, field-level solutions",
-        "Lateral flow assays, CRISPR-based tests, biosensors",
-        "AI-enabled clinical decision support systems"
+        "Lateral flow, CRISPR, biosensors",
+        "AI-enabled decision support systems"
       ],
       icon: "🔬"
     },
@@ -52,10 +51,59 @@ export const CONFERENCE_THEMES = {
       category: "Therapeutics",
       items: [
         "Antimicrobial stewardship programs",
-        "Alternatives: synbiotics, phages, antimicrobial peptides",
-        "Precision medicine approaches"
+        "Alternatives: synbiotics, phages, AMPs",
+        "Precision medicine"
       ],
       icon: "💊"
     }
   ]
+};
+
+export const ABOUT_CONTENT = {
+  hero: {
+    title: "About Our Conference",
+    description: "This National Conference brings together leading researchers, scientists, and industry professionals to discuss the latest advancements and future directions in scientific research and innovation."
+  },
+  overview: {
+    title: "Conference Overview",
+    mission: {
+      title: "Our Mission",
+      description: "To foster interdisciplinary collaboration and knowledge exchange among scientists, researchers, and industry leaders from around the world. We aim to create a platform that accelerates scientific discovery and addresses global challenges through innovative research."
+    },
+    focusAreas: {
+      title: "Key Focus Areas",
+      items: [
+        "Biotechnology and Life Sciences",
+        "Materials Science and Engineering",
+        "Environmental Science and Sustainability",
+        "Computational Science and AI",
+        "Medical and Health Sciences"
+      ]
+    },
+    benefits: {
+      title: "Why Attend?",
+      items: [
+        {
+          title: "Networking Opportunities",
+          description: "Connect with experts and peers from around the globe",
+          color: "blue"
+        },
+        {
+          title: "Latest Research",
+          description: "Discover cutting-edge research and innovations",
+          color: "green"
+        },
+        {
+          title: "Career Development",
+          description: "Enhance your professional skills and knowledge",
+          color: "purple"
+        },
+        {
+          title: "Collaboration",
+          description: "Find opportunities for research collaboration",
+          color: "orange"
+        }
+      ]
+    }
+  }
 };
