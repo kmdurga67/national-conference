@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { REGISTRATION_DATA } from '../constants/registrationData';
+import PresentationGuidelines from './PresentationGuidelines';
 
 const RegistrationPage = () => {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -171,6 +172,7 @@ const RegistrationPage = () => {
                     </div>
                 </div>
             </div>
+            <PresentationGuidelines />
         </div>
     );
 };
